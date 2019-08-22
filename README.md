@@ -1,6 +1,6 @@
-# OKD.io
+# ProjectQuay.io
 
-This repo contains the sources for the [OKD.io](https://www.okd.io/).
+This repo contains the sources for the [ProjectQuay.io](https://www.projectquay.io/).
 
 ## Development
 
