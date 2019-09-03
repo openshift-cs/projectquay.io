@@ -1,4 +1,4 @@
-# OKD.io
+# OKD.iox
 
 This repo contains the sources for the [OKD.io](https://www.okd.io/).
 
