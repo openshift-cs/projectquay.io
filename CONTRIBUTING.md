@@ -16,6 +16,8 @@ And add the `upstream` remote to follow this repository's changes:
 
 ```bash
 $ git remote add upstream git@github.com:openshift-cs/projectquay.io
+-OR-
+$ git remote add upstream https://github.com/openshift-cs/projectquay.io.git
 $ git fetch upstream
 $ git rebase upstream/master
 ```
