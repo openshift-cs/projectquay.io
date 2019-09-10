@@ -4,10 +4,12 @@ title: Project Quay - The open source container-native image registry built for 
 
 <% content_for :header do %>
 <h1 class="animated fadeInDown delay">
-  The Community Distribution of Quay that powers <a href="https://www.openshift.com/products/quay" class="headerlink" target="_blank" style="font-weight: 400;">Red Hat Quay</a> and <a href="https://quay.io/" class="headerlink" target="_blank" style="font-weight: 400;">Quay.io</a> .
+  The Community Distribution of Quay that powers <a href="https://www.openshift.com/products/quay" class="headerlink" target="_blank" style="font-weight: 400;">Red Hat Quay</a> and <a href="https://quay.io/" class="headerlink" target="_blank" style="font-weight: 400;">Quay.io</a>
 </h1>
 <h1 class="animated fadeInDown delay" style="font-size: 36px;"></h1>
-<p class="animated fadeInUp delay">Built around a core of OCI container packaging and Kubernetes container cluster management, Project Quay is also augmented by application lifecycle management functionality and DevOps tooling. Project Quay provides a complete open source container application platform.</p>
+<p class="animated fadeInUp delay">
+Quay is a container image registry that enables you to build, organize, distribute, and deploy containers. Quay gives you security over your repositories with image vulnerability scanning and robust access controls.  Fully OCI compliant, Quay provides a scaleable platform to host container images across any size organization.
+</p>
 <% end %>
 <div class="info_title wow fadeInDown" id="try">
   <i class="fa fa-download left"></i>
@@ -20,31 +22,7 @@ title: Project Quay - The open source container-native image registry built for 
       <span>Project Quay</span> Release
     </h1>
   </div>
-  <div class="">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-6 col-sm-8 col-centered">
-          <div class="row text-center">
-            <div class="col-md-12">
-              <pre class="code">$ <%= link_to "oc", "/download.html#oc-platforms" %> cluster up</pre>
-            </div>
-          </div>
-          <div class="row text-center">
-            <div class="col-sm-offset-2 col-sm-4">
-              <a id="get-started" class="code-button" href="https://github.com/openshift/origin/blob/v4.0.0-alpha.0/docs/cluster_up_down.md" target="_blank">Get&nbsp;Started</a>
-            </div>
-            <div class="col-sm-4">
-              <%= link_to "Download&nbsp;oc", "/download.html#oc-platforms", class: "code-button" %>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="info_vertical animated">
-    <h3>
-      OR
-    </h3>
+
   </div>
   <div class="padding_bottom">
     <div class="container wow fadeInUp">
@@ -58,9 +36,9 @@ title: Project Quay - The open source container-native image registry built for 
               </p>
             </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-              <h2>Run the All-In-One VM with&nbsp;Minishift</h2>
+              <h2>Run Project Quay on Kubernetes</h2>
               <p>
-                Try out a fully functioning Project Quay instance with an integrated container registry, running locally on your machine with <%= link_to "Minishift", "/minishift/index.html" %>.
+                Use the <%= link_to "Quay Setup Operator", "https://github.com/redhat-cop/quay-operator" %> to <a href="https://docs.projectquay.io/latest/getting_started/running-on-openshift.html">quickly install Project Quay on OpenShift or Kubernetes.
               </p>
             </div>
           </div>
@@ -110,9 +88,8 @@ title: Project Quay - The open source container-native image registry built for 
             <div class="row text-left">
               <div class="col-md-6 col-xs-12">
                 <p>
-                  Project Quay is the <strong>open source distribution of Red Hat Quay</strong> optimized for continuous application development and multi-tenant deployment.
-                  Project Quay adds <strong>developer and operations-centric</strong> tools on top of Kubernetes to enable rapid application development, easy deployment
-                  and scaling, and long-term lifecycle maintenance for small and large teams. Project is the upstream distribution of Red Hat Quay.
+                  Project Quay is the <strong>open source distribution of Red Hat Quay</strong> optimized for the secure distribution of container images no matter whether you are scaling from a small departments to the public internet.
+                  Project Quay offers <strong>a consumer-grade web UI</strong>, <strong>image vulnerability scanning</strong>, and <strong>enterprise-grade data storage and protection</strong>.
                 </p>
                 <div class="ytVideoWrapper">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/vMKbV-68-N4?rel=0&autoplay=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -120,8 +97,8 @@ title: Project Quay - The open source container-native image registry built for 
               </div>
               <div class="col-md-6 col-xs-12">
                 <p>
-                  Project Quay embeds Kubernetes and extends it with <strong>security</strong> and other integrated concepts. An Project Quay release corresponds to the Red Hat Quay distribution - for example, Project Quay 1.10 includes Quay 1.10.
-                  If you are looking for enterprise-level support, or information on partner certification, Red Hat also offers <a href="https://www.quay.io" target="_blank">Quay.io</a>
+                  Project Quay works out of the box as a standalone container registry, requiring only a database and reliable storage for your container images.  With minimal infrastructure requirements, Project Quay is designed to scale easily as your container image volumes grow and can run on everything from a laptop to enterprise-class servers.
+                  If you are looking for enterprise-level support, Red Hat offers <a href="https://www.quay.io" target="_blank">Quay.io</a> as a hosted service, or <a href="https://www.redhat.com/en/technologies/cloud-computing/quay">Red Hat Quay</a> for on-premise or private-cloud deployments.
                 </p>
                 <p>
                   Check the <a href="https://github.com/openshift/origin/blob/master/README.md" target="_blank">README file</a> for more
@@ -236,7 +213,7 @@ title: Project Quay - The open source container-native image registry built for 
         <h1>
           Contribute to <span>Project Quay</span>
         </h1>
-        <p>We know you've got great ideas for improving Project Quay and its network of open source projects. So roll up your sleeves and come join us in the community!</p>
+        <p>We know you&#39;ve got great ideas for improving Project Quay and its network of open source projects. So roll up your sleeves and come join us in the community!</p>
       </div>
     </div>
     <div class="container wow fadeInUp">
@@ -275,32 +252,26 @@ title: Project Quay - The open source container-native image registry built for 
             </li>
             <li>
               Fork
-              <a href="https://github.com/projectquay">the repository</a>
+              <a href="https://github.com/quay/quay">the repository</a>
             </li>
             <li>
               Read the
               <a href="https://docs.projectquay.io/latest/welcome/index.html">documentation</a>
             </li>
             <li>
-              Check out the other repositories we're working on:
+              Check out the other repositories we&#39;re working on:
               <ul>
                 <li>
-                  <a href="https://github.com/kubernetes/kubernetes">Kubernetes</a>
-                </li>
-                <li>
-                  <a href="http://kubevirt.io/">Kubevirt</a>
-                </li>
-                <li>
-                  <a href="https://coreos.com/os/docs/latest/">CoreOS</a>
-                </li>
-                <li>
-                  <a href="https://github.com/operator-framework">Operator Framework</a>
+                  <a href="https://github.com/quay/clair">Clair</a>
                 </li>
                 <li>
                   <a href="http://cri-o.io/">CRI-O</a>
                 </li>
-                 <li>
-                  <a href="https://github.com/prometheus/prometheus">Prometheus</a>
+                <li>
+                  <a href="https://github.com/containers/skopeo">Skopeo</a>
+                </li>
+                <li>
+                  <a href="https://podman.io">Podman</a>
                 </li>
               </ul>
             </li>
@@ -308,7 +279,7 @@ title: Project Quay - The open source container-native image registry built for 
           <h2>File a Bug</h2>
           <p>
             Found a bug? Let us know! Project Quay uses a
-            <a href="https://bugzilla.redhat.com/describecomponents.cgi?product=Quay">public Bugzilla instance</a>.
+            <a href="https://jira.jboss.org/">public Jira instance</a>.
           </p>
           <h2>Talk to Us</h2>
           <ul>
@@ -317,9 +288,6 @@ title: Project Quay - The open source container-native image registry built for 
             </li>
             <li>
               Chat with us on the <a href="https://webchat.freenode.net/?randomnick=1&amp;channels=openshift-dev&amp;uio=d4">#openshift-dev channel on Freenode</a>
-            </li>
-            <li>
-              Ask or answer questions on <a href="http://stackoverflow.com/questions/tagged/okd">StackOverflow</a>
             </li>
           </ul>
         </div>
@@ -343,7 +311,7 @@ title: Project Quay - The open source container-native image registry built for 
               <p>OpenShift Commons is open to all community participants: users, operators, enterprises, non-profits, educational institutions, partners, and service providers as well as other open source technology initiatives utilized under the hood or to extend the OpenShift platform.</p>
               <br>
               <ul>
-                <li class="text-left">If you are an Quay.io or an Red Hat Quay customer or have deployed Project Quay itself on premise or on a public cloud.</li>
+                <li class="text-left">If you are a Quay.io or a Red Hat Quay customer or have deployed Project Quay itself on premise or on a public cloud.</li>
                 <li class="text-left">If you have contributed to Project Quay and want to connect with your peers and end users.</li>
                 <li class="text-left">If you simply want to stay up-to-date on the roadmap and best practices for using, deploying and operating Project Quay.</li>
               </ul>
