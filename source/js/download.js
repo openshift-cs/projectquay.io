@@ -8,7 +8,7 @@ $(document).ready(function($) {
             var downloads = $('#downloads'),
                 more_details = $('#more-details');
             
-            downloads.html('<h2>Sorry, we appear to be having difficulties fetching our binaries</h2>' + more_details[0].outerHTML);
+            downloads.html('<h2>Sorry, we appear to be having difficulties fetching the Project Quay container images</h2>' + more_details[0].outerHTML);
         };
 
     $.ajax({

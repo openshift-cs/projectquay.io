@@ -6,14 +6,22 @@ This repo contains the sources for the [ProjectQuay.io](https://www.projectquay.
 
 **Note** [`Node.js` is a required dependency](http://stackoverflow.com/a/6283074/6758654) on Linux machines
 
-Firstly install the necessary packages on your machine:
+Step 1:  Ruby and Ruby Gems are required.  Please [install according to your operating system](https://www.ruby-lang.org/en/documentation/installation/)
+
+Step 2: Install the `bundle` command:
+
+    gem install bundler
+
+
+Step 3: `cd` to where you have cloned this repository.  Install the necessary ruby packages on your machine:
 
     bundle install
 
-To develop on your local machine run the middleman server and you
-should be able to preview your changes at http://localhost:4567
+Step 4: Run the server:
 
     bundle exec middleman server
+
+You should be able to preview your changes at http://localhost:4567
 
 ## Deployment
 
