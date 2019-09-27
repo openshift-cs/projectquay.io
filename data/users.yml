@@ -11,3 +11,6 @@ users:
   - name: Qualcomm
     link: https://qualcomm.com/
     logo: qualcomm.png
+  - name: Solo.io
+    link: https://solo.io/
+    logo: soloio.png
