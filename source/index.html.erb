@@ -8,7 +8,7 @@ title: Project Quay - The open source container-native image registry built for 
 </h1>
 <h1 class="animated fadeInDown delay" style="font-size: 36px;"></h1>
 <p class="animated fadeInUp delay">
-Quay is a container image registry that enables you to build, organize, distribute, and deploy containers. Quay gives you security over your repositories with image vulnerability scanning and robust access controls.  Fully OCI compliant, Quay provides a scaleable platform to host container images across any size organization.
+Quay is a container image registry that enables you to build, organize, distribute, and deploy containers. Quay gives you security over your repositories with image vulnerability scanning and robust access controls.  Based on the OCI model, Quay provides a scaleable platform to host container images across any size organization.
 </p>
 <% end %>
 <div class="info_title wow fadeInDown" id="try">
@@ -88,7 +88,7 @@ Quay is a container image registry that enables you to build, organize, distribu
             <div class="row text-left">
               <div class="col-md-6 col-xs-12">
                 <p>
-                  Project Quay is the <strong>open source distribution of Red Hat Quay</strong> optimized for the secure distribution of container images no matter whether you are scaling from a small departments to the public internet.
+                  Project Quay is the <strong>open source distribution of Red Hat Quay</strong> optimized for the secure distribution of container images no matter whether you are scaling from a small department to the public internet.
                   Project Quay offers <strong>a consumer-grade web UI</strong>, <strong>image vulnerability scanning</strong>, and <strong>enterprise-grade data storage and protection</strong>.
                 </p>
                 <div class="ytVideoWrapper">
@@ -97,13 +97,37 @@ Quay is a container image registry that enables you to build, organize, distribu
               </div>
               <div class="col-md-6 col-xs-12">
                 <p>
-                  Project Quay works out of the box as a standalone container registry, requiring only a database and reliable storage for your container images.  With minimal infrastructure requirements, Project Quay is designed to scale easily as your container image volumes grow and can run on everything from a laptop to enterprise-class servers.
+                  Project Quay works out of the box as a standalone container registry requiring only a database and reliable storage for your container images.  With minimal infrastructure requirements, Project Quay is designed to easily scale as your image volumes grow. Quay runs on everything from a laptop to enterprise-class servers.
+                </p>
+                <p>
                   If you are looking for enterprise-level support, Red Hat offers <a href="https://www.quay.io" target="_blank">Quay.io</a> as a hosted service, or <a href="https://www.redhat.com/en/technologies/cloud-computing/quay">Red Hat Quay</a> for on-premise or private-cloud deployments.
                 </p>
                 <p>
                   Check the <a href="https://github.com/openshift/origin/blob/master/README.md" target="_blank">README file</a> for more
                   information on the latest release of Project Quay.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="info_vertical">
+            <h1>
+              Built For
+              <span>Security</span>
+            </h1>
+            <div class="row text-left">
+              <div class="col-md-6 col-xs-12">
+                <p>
+                  Project Quay includes <a href="https://coreos.com/clair/">Clair</a>, a leading container vulnerability scanner.  Clair scans every image pushed to Quay and continuously scans images to provide a real-time view of any known vulnerabilities in your containers.  Clair is used by commercial container registries as well as the <a href="https://access.redhat.com/containers/">Red Hat Container Catalog</a> to provide complete visibility into the security status of container images.
+                </p>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                  <%= image_tag 'Clair-scan.png', {:alt => 'Clair Scan Results', :class => 'logo_tech'} %>
               </div>
             </div>
           </div>
