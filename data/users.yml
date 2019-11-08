@@ -1,4 +1,7 @@
 users:
+  - name: OpenAI
+    link: https://openai.com/
+    logo: openai.png
   - name: Nasa
     link: https://www.nasa.gov/
     logo: nasa.png
