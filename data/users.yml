@@ -1,4 +1,7 @@
 users:
+  - name: eBay
+    link: https://ebay.com/
+    logo: ebay.png
   - name: OpenAI
     link: https://openai.com/
     logo: openai.png
