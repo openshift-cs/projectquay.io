@@ -11,7 +11,7 @@ if ($github_file = file_get_contents('github_api_output.json')) {
 // Send API request to GitHub, including authentication information to ensure rate limits are higher
 // See https://developer.github.com/v3/#increasing-the-unauthenticated-rate-limit-for-oauth-applications for details
 $curl = curl_init();
-$url = 'https://api.github.com/repos/openshift/origin/releases/latest';
+$url = 'https://api.github.com/repos/quay/quay/releases/latest';
 $data = ['client_id' => getenv('OPENSHIFT_GITHUB_ID'),
          'client_secret' => getenv('OPENSHIFT_GITHUB_SECRET')];
 $url = sprintf("%s?%s", $url, http_build_query($data));
