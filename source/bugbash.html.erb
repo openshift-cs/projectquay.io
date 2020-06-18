@@ -1,0 +1,80 @@
+         ---
+title: Project Quay Bug Bash
+description: Bug Bash the Project Quay 
+---
+
+<!--
+
+
+TODO: WE SHOULD PROBABLY JUST REPLACE ALL THIS STUFF WITH BASIC INSTRUCTIONS ON HOW TO 'podman pull quay.io/projectquay/quay:latest', OR SOME OTHER SUCH THING...
+          IT DEPENDS ON WHERE THE UPSTREAM RELEASES WILL BE PLACED (ASSUMING IT SHOULD BE quay.io!!)
+
+
+-->
+
+<% content_for :header do %>
+<h1 class="animated fadeInDown delay">
+  Download Project Quay - A distributed container image registry for your enterprise
+</h1>
+<p class="animated fadeInUp delay">Download the latest Project Quay container images</p>
+<% end %>
+
+<% content_for :navbar do %>
+<div class="nav_logo animated fadeIn">
+</div>
+<% end %>
+
+<% content_for :javascript do %>
+<%= javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/showdown/1.6.3/showdown.min.js" %>
+<%= javascript_include_tag "download.js" %>
+<% end %>
+
+<section class="paddings" id="downloads">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-centered">
+        <div class="row animated fadeInDown padding_bottom" id="server-platforms">
+          <h2>Download Project Quay App Server</h2>
+          <div class="row instructions"><small>
+            <a href="https://docs.okd.io/latest/getting_started/administrators.html#downloading-the-binary" target="_blank">Installation Instructions</a>
+          </small></div>
+          <div class="row">
+            <div class="col-md-offset-4 col-md-4 linux-platform"><h4><i class="fa fa-linux left"></i> Linux</h4></div>
+          </div>
+        </div>
+        <div class="row animated fadeInDown padding_bottom" id="server-platforms">
+          <h2>Download Clair</h2>
+          <div class="row instructions"><small>
+            <a href="https://docs.okd.io/latest/getting_started/administrators.html#downloading-the-binary" target="_blank">Installation Instructions</a>
+          </small></div>
+          <div class="row">
+            <div class="col-md-offset-4 col-md-4 linux-platform"><h4><i class="fa fa-linux left"></i> Linux</h4></div>
+          </div>
+        </div>
+        <div class="row animated fadeInDown padding_bottom" id="server-platforms">
+          <h2>Download Project Quay Builders</h2>
+          <div class="row instructions"><small>
+            <a href="https://docs.okd.io/latest/getting_started/administrators.html#downloading-the-binary" target="_blank">Installation Instructions</a>
+          </small></div>
+          <div class="row">
+            <div class="col-md-offset-4 col-md-4 linux-platform"><h4><i class="fa fa-linux left"></i> Linux</h4></div>
+          </div>
+        </div>
+        <div class="row" id="more-details">
+          <div class="info-verticle">
+            To see more details, including source code, check out our <%= link_to "<i class='fa fa-github'></i> Releases page", "https://github.com/quay/quay/releases/latest" %>!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="opacy_bg_01 paddings" id="release-notes">
+  <div class="container">
+    <div class="row animated fadeInUp">
+      <div class="col-md-10 col-centered release-content">
+      </div>
+    </div>
+  </div>
+</section>
